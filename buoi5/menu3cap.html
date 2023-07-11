@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu đa cấp - Lazada Style</title>
+    <style>
+        /* Thiết lập kiểu dáng cho menu */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #e54d42;
+        }
+
+        ul.menu li {
+            position: relative;
+        }
+
+        ul.menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul.menu li:hover > a {
+            background-color: #c74339;
+        }
+
+        /* Thiết lập kiểu dáng cho menu cấp 2 */
+        ul.menu ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        ul.menu li:hover > ul {
+            display: block;
+            top: 0;
+            left: 100%;
+        }
+
+        ul.menu ul li {
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul.menu ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul.menu ul li a {
+            padding: 10px 15px;
+            color: #333;
+        }
+
+        ul.menu ul li:hover > a {
+            background-color: #f2f2f2;
+        }
+
+        /* Thiết lập kiểu dáng cho menu cấp 3 */
+        ul.menu ul ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        ul.menu ul li:hover > ul {
+            display: block;
+            top: 0;
+            left: 100%;
+        }
+
+        ul.menu ul ul li {
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul.menu ul ul li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">Điện tử</a>
+            <ul>
+                <li>
+                    <a href="#">Điện thoại &amp; Phụ kiện</a>
+                    <ul>
+                        <li><a href="#">Điện thoại di động</a></li>
+                        <li><a href="#">Tai nghe</a></li>
+                        <li><a href="#">Ốp lưng &amp; Bao da</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Máy tính &amp; Laptop</a>
+                    <ul>
+                        <li><a href="#">Máy tính để bàn</a></li>
+                        <li><a href="#">Máy tính xách tay</a></li>
+                        <li><a href="#">Phụ kiện máy tính</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Máy ảnh &amp; Máy quay phim</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Thời trang</a>
+            <ul>
+                <li>
+                    <a href="#">Nam</a>
+                    <ul>
+                        <li><a href="#">Áo thun</a></li>
+                        <li><a href="#">Quần jean</a></li>
+                        <li><a href="#">Phụ kiện nam</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nữ</a>
+                    <ul>
+                        <li><a href="#">Áo sơ mi</a></li>
+                        <li><a href="#">Váy</a></li>
+                        <li><a href="#">Phụ kiện nữ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Trẻ em</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Đồ gia dụng</a>
+            <ul>
+                <li><a href="#">Điều hòa &amp; Quạt</a></li>
+                <li><a href="#">Nồi cơm &amp; Nồi áp suất</a></li>
+                <li><a href="#">Bếp &amp; Lò vi sóng</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

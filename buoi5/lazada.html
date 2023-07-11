@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+            
+            
+            cursor: pointer;
+            border-right: 1px solid white;
+            position: relative;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        nav ul ul{
+            display: none;
+            position: absolute;
+            
+            left: 0;
+
+        }
+        
+
+        nav ul li:hover ul{
+            display: block;
+            cursor: pointer;
+        }
+        
+        .display{
+            width: 250px;
+            margin-top: 20px;
+            color: #e2e0e0;;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            background-color: #f8f6f6;
+            border: none;
+            border-top:1px solid #9e9e9e;
+            margin-top: 5px;
+            
+        }
+        
+        button{
+            width: 20px;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        .container{
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex
+        }
+        input.timkiem{
+            width: 50%;
+            height: 50px;
+            margin-top:30px ;
+            margin-bottom:25px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        button.timkiem{
+            width: 50px;
+            height: 50px;
+            margin-top:30px ;
+            margin-bottom:25px;
+            margin-right: 70px;
+        }
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid rgb(235, 231, 231);
+        }
+
+        ul.menu li {
+            position: relative;
+        }
+
+        ul.menu li a {
+            display: block;
+            margin-left: 5px;
+            margin-top: 5px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        ul.menu li:hover > a {
+            background-color: #fff;
+            color: rgb(243, 163, 58);
+        }
+
+        /* Thiết lập kiểu dáng cho menu cấp 2 */
+        ul.menu ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        ul.menu li:hover > ul {
+            display: block;
+            top: 0;
+            left: 100%;
+        }
+
+        ul.menu ul li {
+            position: relative;
+          
+            text-decoration: none;
+        }
+
+        ul.menu ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul.menu ul li a {
+            padding: 6px 6px;
+            color: #333;
+        }
+
+        ul.menu ul li:hover > a {
+            
+            background-color: #f2f2f2;
+        }
+        ul li{
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /* Thiết lập kiểu dáng cho menu cấp 3 */
+        ul.menu ul ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        ul.menu ul li:hover > ul {
+            display: block;
+            top: 0;
+            left: 100%;
+            
+        }
+
+        ul.menu ul ul li {
+            
+            
+        }
+
+        ul.menu ul ul li:last-child {
+            border-bottom: none;
+        }
+        .menu1{
+            
+            display: flex;
+            
+            margin-left: 20%;
+            
+        }
+        .slideshow{
+            display: flex;
+            
+        }
+        .tong{
+            
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div>
+            <img src="https://icms-image.slatic.net/images/ims-web/9377110d-45a4-467c-bcb8-4ffc50466fd4.png" alt="" style="width: 100%; height: auto;">
+        
+        </div>
+            
+                <div class="menu" align="center"  style="background-color:rgba(0,0,0,.03); width: 100%;height: 20px;position: relative;">
+                
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="" style="color: #0f1568;" class="hover" >tiện lợi hơn với ứng dụng</a>
+                                    <ul>
+                                        <li>
+                                            <img src="Annotation 2023-07-11 000857.png" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.lazada.vn/sell-on-lazada-register-now?spm=a2o4n.home.header.d2.19053bdcy0v6K7" style="font-size: 15px; color: #0f1568;">Bán Hàng Cùng LAZADA</a></li>
+                                <li style="color: #9e9e9e;">Chăm sóc khách hàng
+                                    <ul align="left" style="background-color: white; ">
+                                        <li class="display" style="color: #9e9e9e;margin-left: 10px;" >
+                
+                                            <a href="">
+                                                <p>🤦‍♀️ &#12644  trung tâm hỗ trợ</p>
+                                            </a>
+                                        </li>
+                                        <li class="display" style="color: #9e9e9e;margin-left: 10px;" >
+                
+                                            <a href="">
+                                                <p>📞 &#12644  đon hàng & thanh toán</p>
+                                            </a>
+                                        </li>
+                                        <li class="display" style="color: #9e9e9e;margin-left: 10px;" >
+                
+                                            <a href="">
+                                                <p>🐱‍🏍 &#12644  Giao hàng & Nhận hàng</p>
+                                            </a>
+                                        </li>
+                                        <li class="display" style="color: #9e9e9e;margin-left: 10px;" >
+                
+                                            <a href="">
+                                                <p>🤦‍♀️ &#12644  Liên hệ với Lazada</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                
+                                <li style="color: #9e9e9e;">kiểm tra đon hàng
+                                    <ul >
+                                        <li style="margin-top: 20px; width: 250px;border: 1px solid #9e9e9e;background-color: white; " align="left">
+                                            <div style="margin-left: 10px;" >
+                                                <p>kiểm tra đơn hàng</p>
+                                                <p style="margin-top: 20px;">Vui long nhập địa chỉ email</p>
+                                                <input type="email">
+                                                <p style="margin-top: 10px;">vui lòng nhập mã đơn hàng</p>
+                                                <input type="text">
+                                                <button>👌</button>
+                                                <p style="margin-bottom: 50px;">nếu bạn có thắc mắc nào khác; <a href="">nhấn vào đây</a></p>
+                                            </div>
+                
+                                        </li>
+                                    </ul>
+                
+                                </li>
+                                <li> <a href="https://member.lazada.vn/user/register?spm=a2o4n.home.header.d6.36133bdcXHj132"style="font-size: 15px;color: #9e9e9e;">Đăng Nhập</a></li>
+                                <li style="font-size: 16px;color: #9e9e9e;">CHANGE LANGUAGE
+                                </li>
+                
+                            </ul>
+                        </nav>
+                
+                </div>
+       <div class="container">
+        <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1T7K2d8Cw3KVjSZFuXXcAOpXa.png" width="200px" height="60px" alt="" style=" margin-top: 25px; margin-bottom: 25px;">
+        <input type="search" class="timkiem" id="tim"><button class="timkiem" id="tim">🔍</button>
+        <a href="https://member.lazada.vn/user/login?lzdmflt=p&redirect=http%3A%2F%2Fcart.lazada.vn%2Fcart%3Fspm%3Da2o4n.home.header.dcart.19053bdcleodoY%26scm%3D1003.4.icms-zebra-5001419-2591642.OTHER_5196131641_2267316" style="font-size: 50px; margin-top: 15px;">🛒</a>
+        <a href="https://pages.lazada.vn/wow/gcp/route/lazada/vn/upr_1000345_lazada/channel/vn/upr-router/vn?spm=a2o4n.home.header.dewallet.507a3bdct5zPlm&hybrid=1&data_prefetch=true&prefetch_replace=1&at_iframe=1&wh_pid=/lazada/channel/vn/thanh-toan/uu-dai-thanh-toan"><img src="https://icms-image.slatic.net/images/ims-web/3d7ebe05-f6c8-4251-b203-20b4c6a71ce4.png" width="200px" height="60px" alt="" style=" margin-top: 25px; margin-bottom: 25px; margin-left: 35px;"></a>
+       </div>    
+       <tbody style="width: 100%;" align="center">
+       
+        <div class="tong" style="width: 100%; height: 334px; " align="center" >
+            <div class="menu1"align="left">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Thiết Bị Điện Tử</a>
+                        <ul>
+                            <li>
+                                <a href="#">Điện thoại &amp; Phụ kiện</a>
+                            </li>
+                            <li>
+                                <a href="#">Máy Tính Bảng</a>
+                            </li>
+                            <li>
+                                <a href="#"> Laptop</a>
+                                <ul>
+                                    <li><a href="#">Máy tính cơ bản</a></li>
+                                    <li><a href="#">Máy tính chơi game </a></li>
+                                    <li><a href="#">Phụ kiện 2 trong 1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">máy tính để bàn</a>
+                                <ul>
+                                    <li><a href="#">Máy tính nguyên bộ</a></li>
+                                    <li><a href="#">Máy tính để bàn chơi game </a></li>
+                                    <li><a href="#">Máy tính tự ráp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">âm thanh</a>
+                                <ul>
+                                    <li><a href="#">các loại tai nghe</a></li>
+                                    <li><a href="#">loa di dộng </a></li>
+                                    <li><a href="#">âm thanh tại nhà</a></li>
+                                    <li><a href="#">thiết bị audio chuyên nghiệp</a></li>
+                                    <li><a href="#">thiết bị dj </a></li>
+                                    <li><a href="#">máy đọc đĩa than</a></li>
+                                    <li><a href="#">phụ kiện tai nghe</a></li>
+                                    <li><a href="#">phụ kiện loa di động </a></li>
+                                    <li><a href="#">phụ kiện âm thanh tại nhà</a></li>
+                                    <li><a href="#">phụ kiện thiết bị âm thanh c...</a></li>
+                                    <li><a href="#">thiết bị âm thanh di động</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#">camera giám sát</a>
+                                <ul>
+                                    <li><a href="#">Camera ip kết nối internet</a></li>
+                                    <li><a href="#">camera an ninh cctv</a></li>
+                                    <li><a href="#">he thong an ninh ip</a></li>
+                                    <li><a href="#">he thong an ninh cctv</a></li>
+                                    <li><a href="#">camera chong trom</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="#">máy ảnh kí thuật số</a>
+                                    <ul>
+                                        <li><a href="#">máy ảnh dslr</a></li>
+                                        <li><a href="#">máy ảnh không gương lật </a></li>
+                                        <li><a href="#">máy ảnh du lịch</a></li>
+                                        <li><a href="#">máy ảnh siêu zoom</a></li>
+                                        <li><a href="#">máy bay camera </a></li>
+                                        <li><a href="#">máy chụp lấy ngay</a></li>
+                                        <li><a href="#">ông kính</a></li>
+                                        <li><a href="#">ống nhòm  </a></li>
+                                        <li><a href="#">các loại máy ảnh khác </a></li>
+                                        
+                                        
+                                    </ul>
+                                </li> 
+                                <li><a href="#">máy ảnh máy quay phim...</a>
+                                    <ul>
+                                        <li><a href="#">camera thể thao & hành động </a></li>
+                                        <li><a href="#">máy quay phim</a></li>
+                                        <li><a href="#">máy quay phim chuyên nghiệp</a></li>
+                                        <li><a href="#">camera 360</a></li>
+                                        <li><a href="#">máy quay dươi nước</a></li>
+                                    </ul>
+                                    </li> 
+                                    <li>
+                                        <a href="#">màn hình vi tính</a>
+                                    </li>  
+                                    <li><a href="#">máy in </a>
+                                        <ul>
+                                            <li><a href="#">máy in </a></li>
+                                            <li><a href="#">máy scan</a></li>
+                                            <li><a href="#">máy fax</a></li>
+                                            <li><a href="#">máy in 3d </a></li>
+                                            <li><a href="#">máy in cắt</a></li>
+                                        </ul>
+                                        </li> 
+                                        <li><a href="#">Đồng hồ thông minh</a>
+                                            <ul>
+                                                <li><a href="#">đồng hồ thông minh  </a></li>
+                                                <li><a href="#">Đồng hồ thông minh trẻ em </a></li>
+                                                <li><a href="#">đồng hồ thông minh người già</a></li>
+                                                
+                                            </ul>
+                                            </li>   
+                                            <li><a href="#">máy chơi game </a>
+                                                <ul>
+                                                    <li><a href="#">máy chơi game  </a></li>
+                                                    <li><a href="#">trò chơi máy console</a></li>
+                                                    <li><a href="#">ốp lưng</a></li>
+                                                    <li><a href="#">tai nghe chơi game </a></li>
+                                                    <li><a href="#">miến dán màn hình</a></li>
+                                                </ul>
+                                                </li>                      
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Phụ kiện điện tử</a>
+                    <ul>
+                    <li>
+                        <a href="#">Phụ kiện di động</a>
+                        <ul>
+                            <li><a href="#">pin sạc dư phòng</a></li>
+                            <li><a href="#">cáp & dock sac </a></li>
+                            <li><a href="#">bộ sạc máy có dây</a></li>
+                            <li><a href="#">bộ sạc máy không dây</a></li>
+                            <li><a href="#">Op lung va bao gia  </a></li>
+                            <li><a href="#">op lung bao gia may tinh</a></li>
+                            <li><a href="#">cường lực </a></li>
+                            <li><a href="#">gậy chụp ảnh </a></li>
+                            <li><a href="#">sạc trên xe hơi </a></li>
+                            <li><a href="#">sim va thẻ cào </a></li>
+                            <li><a href="#">dock sac & gia đỡ</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">thiêt bị thông minh </a>
+                        <ul>
+                            <li><a href="#">Đòng hồ thông minh </a></li>
+                            <li><a href="#">thiết bị theo dõi vận động </a></li>
+                            <li><a href="#">thiết bị số</a></li>
+                            <li><a href="#">công tắc thông minh </a></li>
+                            <li><a href="#"> mắt kính thông minh  </a></li>
+                            <li><a href="#">nhẫn thông minh </a></li>
+                            <li><a href="#">phụ kiện thực tế ảo  </a></li>
+                            <li><a href="#">thiết bị điều kiển cử chỉ</a></li>
+                            <li><a href="#">thiết bị giám sát thông minh </a></li>
+                            <li><a href="#">thiết bị Streaming </a></li>
+                            <li><a href="#">dock sac & gia đỡ</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">thiết bị số</a>
+                        <ul>
+                            <li><a href="#">Bút laser </a></li>
+                            <li><a href="#">Máy dò kim loại  </a></li>
+                            <li><a href="#">kim tự điển& máy thông dịch</a></li>
+                            <li><a href="#">Đóc sạc đa năng</a></li>
+                            <li><a href="#">bảng vẽ </a></li>
+                            <li><a href="#">bộ đàm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">phụ kiện máy ảnh</a>
+                        <ul>
+                            <li><a href="#">balo máy ảnh</a></li>
+                            <li><a href="#">pin máy ảnh</a></li>
+                            <li><a href="#">sạc máy ảnh</a></li>
+                            <li><a href="#">tay cầm chống rung</a></li>
+                            <li><a href="#">tripods & monopods </a></li>
+                            <li><a href="#">bộ sạc </a></li>
+                            <li><a href="#">dây đeo</a></li>
+                            <li><a href="#">đèn flats </a></li>
+                            <li><a href="#">hộp chống ẩm </a></li>
+                            <li><a href="#">kính lọc máy ảnh</a></li>
+                            <li><a href="#">micro quay phim</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">Phụ kiện bay camera </a>
+                        <ul>
+                            <li><a href="#">túi đựng</a></li>
+                            <li><a href="#">pin</a></li>
+                            <li><a href="#">điều khiển từ xa </a></li>
+                            <li><a href="#">cánh và phụ kiện</a></li>
+                            <li><a href="#">camera chong trom</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">thiết bị lưu trữ</a>
+                            <ul>
+                                <li><a href="#">ổ cứng trong</a></li>
+                                <li><a href="#">ổ cứng gắn ngoài  </a></li>
+                                <li><a href="#">thẻ nhớ</a></li>
+                                <li><a href="#">thiết bị lưu chứ mạng</a></li>
+                                <li><a href="#">usb otg </a></li>
+                                <li><a href="#">usb</a></li>
+                                <li><a href="#">bộ nhớ ngoài </a></li>
+                                <li><a href="#">ssd trong  </a></li>
+                                <li><a href="#">ssd ngoài </a></li>
+                                
+                                
+                            </ul>
+                        </li> 
+                        <li><a href="#">phụ kiện máy tính</a>
+                            <ul>
+                                <li><a href="#">camera thể thao & hành động </a></li>
+                                <li><a href="#">máy quay phim</a></li>
+                                <li><a href="#">máy quay phim chuyên nghiệp</a></li>
+                                <li><a href="#">camera 360</a></li>
+                                <li><a href="#">máy quay dươi nước</a></li>
+                            </ul>
+                            </li> 
+                            <li>
+                                <a href="#">linh kiện máy tính</a>
+                            </li>  
+                            <li><a href="#">phụ kiện ống kính </a>
+                                <ul>
+                                    <li><a href="#">máy in </a></li>
+                                    <li><a href="#">máy scan</a></li>
+                                    <li><a href="#">máy fax</a></li>
+                                    <li><a href="#">máy in 3d </a></li>
+                                    <li><a href="#">máy in cắt</a></li>
+                                </ul>
+                                </li> 
+                                <li><a href="#">thiết bị mạng</a>
+                                    <ul>
+                                        <li><a href="#">đồng hồ thông minh  </a></li>
+                                        <li><a href="#">Đồng hồ thông minh trẻ em </a></li>
+                                        <li><a href="#">đồng hồ thông minh người già</a></li>
+                                        
+                                    </ul>
+                                    </li>   
+                                    <li><a href="#">phụ kiện máy chơi game </a>
+                                        <ul>
+                                            <li><a href="#">máy chơi game  </a></li>
+                                            <li><a href="#">trò chơi máy console</a></li>
+                                            <li><a href="#">ốp lưng</a></li>
+                                            <li><a href="#">tai nghe chơi game </a></li>
+                                            <li><a href="#">miến dán màn hình</a></li>
+                                        </ul>
+                                        </li>                      
+                </ul>
+            </li>
+                    <li>
+                        <a href="#">tv & thiết bị điện</a>
+                        <ul>
+                            <li>
+                                <a href="#">Nam</a>
+                                <ul>
+                                    <li><a href="#">Áo thun</a></li>
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Phụ kiện nam</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Nữ</a>
+                                <ul>
+                                    <li><a href="#">Áo sơ mi</a></li>
+                                    <li><a href="#">Váy</a></li>
+                                    <li><a href="#">Phụ kiện nữ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Trẻ em</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">sức khỏe  & làm đẹp</a>
+                        <ul>
+                            <li><a href="#">Điều hòa &amp; Quạt</a></li>
+                            <li><a href="#">Nồi cơm &amp; Nồi áp suất</a></li>
+                            <li><a href="#">Bếp &amp; Lò vi sóng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">hàng mẹ,bé & đồ chơi</a>
+                    </li>
+                    <li>
+                        <a href="#">siêu thị tạp hóa </a>
+                    </li>
+                    <li>
+                        <a href="#">hàng gia dụng và đời sống</a>
+                    </li>
+                    <li>
+                        <a href="#">thời trang và phụ kiện</a>
+                    </li>
+                    <li><a href="#">thời trang và phụ kiện nam</a></li>
+                    <li><a href="#">thời trang và phụ kiện bé</a></li>
+                    <li><a href="#">thể thao và du lịch</a></li>
+                    <li><a href="#">oto,xe máy & thiết bị ....</a></li>
+                </ul>
+            
+            <div class="slideshow" style="width: 100%; " >
+                
+                    <img id="a1" src="https://icms-image.slatic.net/images/ims-web/dcf12a00-687f-4b03-84ca-851302873d1d.jpg" width="80%" align="center">
+                   
+                    <img id="a2"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/92d5ea2a-5040-42d1-a590-15228cd8f46d.jpg_1200x1200q90.jpg_.webp" width="80%" align="center" style="">
+
+                <img id="a3"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/9d3716fa-3741-4bae-bb19-82a609f89890.jpg_1200x1200q90.jpg_.webp" width="80%" align="center">
+                <img id="a4"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/94f3b042-21d6-4abb-b99a-f2108ef79d5f.jpg_1200x1200q90.jpg_.webp"  width="80%" align="center">
+                <img id="a5"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/02d24876-c1c1-4030-a754-1297355707ef.jpg_1200x1200q90.jpg_.webp" alt="" width="80%" align="center">
+                <img id="a6"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/18a941c4-bb0f-48ef-95bd-1d26778e7d84.jpg_1200x1200q90.jpg_.webp" alt="" width="80%" align="center">
+                <img id="a7"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/e0c1dffd-7e61-4cbc-b6c8-5c36846ff634.jpg_1200x1200q90.jpg_.webp" alt="" width="80%" align="center">
+                <img id="a8"src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/34b9ae6c-a68b-4f75-867d-a401f2833d02.jpg_1200x1200q90.jpg_.webp" alt="" width="80%" align="center">
+            </div>
+           
+            <script>
+                var slideIndex = 0;
+                showSlides();
+        
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    slides[slideIndex-1].style.display = "block";  
+                    setTimeout(showSlides, 3000); // Đổi ảnh mỗi 3 giây
+                }
+            </script>
+       </tbody>
+       </div>
+       
+       
+
+</body>
+</html>
