@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes wave {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.text-container {
+  display: inline-block;
+}
+
+.text-container span {
+  display: inline-block;
+  animation: wave 0.5s infinite;
+  animation-delay: calc(0.1s * var(--index));
+}
+</style>
+</head>
+<body>
+<div class="text-container">
+  <span style="--index: 1;">c </span>
+  <span style="--index: 2;">o </span>
+  <span style="--index: 3;">n</span>
+  <span style="--index: 4;">l</span>
+  <span style="--index: 5;">ư</span>
+  <span style="--index: 1;">ơ</span>
+  <span style="--index: 2;">n</span>
+  <span style="--index: 3;">n</span>
+  <span style="--index: 4;">o</span>
+  <span style="--index: 5;">l</span>
+  <span style="--index: 1;">u</span>
+  <span style="--index: 2;">o</span>
+  <span style="--index: 3;">n</span>
+  <span style="--index: 4;">q</span>
+  <span style="--index: 5;">u</span>
+  <span style="--index: 1;">a</span>
+  <span style="--index: 2;">l</span>
+  <span style="--index: 3;">u</span>
+  <span style="--index: 4;">o</span>
+  <span style="--index: 5;">n</span>
+  <span style="--index: 3;">e</span>
+  <span style="--index: 4;">m</span>  
+</div>
+</body>
+</html>
